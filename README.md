@@ -13,34 +13,49 @@ A powerful **password security checker** that verifies password strength and det
 ---
 
 ## **📂 Project Structure**
-After downloading `rockyou.txt`, your project directory should look like this:
+After setting up `rockyou.txt`, your project directory should look like this:
 
 📁 Password-Authentication-Tool ├── 📜 app.py # Main script ├── 📜 rockyou.txt # Password wordlist (MUST be in the same directory) ├── 📜 README.md # Project description
 
-yaml
-Copy
-Edit
+
 
 ---
 
-## **🔹 How to Download `rockyou.txt`**
-The tool **requires `rockyou.txt`** to check for leaked passwords.  
-
-### **Option 1: Download from Kali Linux**
-If you have **Kali Linux**, you can find `rockyou.txt` in:
+## **📌 How to Set Up `rockyou.txt` Automatically**
+### **🔹 Option 1: Extract from Kali Linux (Recommended)**
+If you have **Kali Linux**, `rockyou.txt` is already included!  
+Just **extract and copy it** to your project folder:
 ```sh
-/usr/share/wordlists/rockyou.txt.gz
+mkdir -p Password-Authentication-Tool
 ```
-To extract it, run:
+```sh
+cp /usr/share/wordlists/rockyou.txt.gz Password-Authentication-Tool/
+```
+```sh
+cd Password-Authentication-Tool
+```
+```sh
+gzip -d rockyou.txt.gz
+```
+(This will copy and extract rockyou.txt into your project.)
+
+🔹 Option 2: Download Manually
+If you're on Windows or another OS, follow these steps:
+
+1️⃣ Download rockyou.txt from: 🔗 RockYou.txt on Kaggle
+
+2️⃣ Move it to your project folder:
 
 ```sh
-gzip -d /usr/share/wordlists/rockyou.txt.gz
-```
-Then copy the file to your project directory.
+mkdir -p Password-Authentication-Tool
+mv ~/Downloads/rockyou.txt Password-Authentication-Tool/
+3️⃣ Check if the file is in the right place:
 
-Option 2: Download Manually
-Download rockyou.txt from: 🔗 RockYou.txt on Kaggle
-Move it into your project folder (Password-Authentication-Tool/).
+```sh
+ls Password-Authentication-Tool/
+```
+✔️ If you see rockyou.txt, you're good to go!
+
 🚀 How to Use the Tool
 1️⃣ Clone the Repository:
 
@@ -50,7 +65,7 @@ git clone https://github.com/hasanqadomy/password-auth-tool.git
 ```sh
 cd password-auth-tool
 ```
-2️⃣ Make Sure rockyou.txt is Inside the Project Folder!
+2️⃣ Ensure rockyou.txt is Inside the Project Folder!
 (If it's missing, follow the steps above to download it.)
 
 3️⃣ Run the Script:
@@ -63,6 +78,14 @@ python app.py
 1 – Check Password Strength
 2 – Generate a Secure Password
 999 – Exit
+```
+```sh
+🔐 Example Usage :
+
+Choose an option:
+1 - Password Checker
+2 - Password Generator
+999 - Exit
 
 Enter Your Password: mypassword123
 🔍 Searching in rockyou.txt... [############          ] 60%
@@ -88,16 +111,12 @@ This project is licensed under the MIT License – Free to use, modify, and dist
 🌟 Star this repo if you found it useful! ⭐
 Let me know if you need any more modifications! 🚀💻
 
-yaml
-
-
 ---
 
-## **🔹 What’s New in This README?**
-✅ **Added clear steps to download `rockyou.txt`**  
-✅ **Explained the directory structure**  
-✅ **Simplified setup & usage instructions**  
-✅ **Included direct links to `rockyou.txt`**  
-✅ **Formatted it to be easy to follow**  
+### **✅ What’s New in This README?**
+✅ **Added `rockyou.txt` auto-extraction and copying commands**  
+✅ **Simplified setup for both Kali Linux and Windows users**  
+✅ **Explained how to move `rockyou.txt` to the correct folder automatically**  
+✅ **Formatted everything to be beginner-friendly**  
 
 ---
