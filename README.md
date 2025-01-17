@@ -30,12 +30,12 @@ The tool **requires `rockyou.txt`** to check for leaked passwords.
 If you have **Kali Linux**, you can find `rockyou.txt` in:
 ```sh
 /usr/share/wordlists/rockyou.txt.gz
+```
 To extract it, run:
 
-sh
-Copy
-Edit
+```sh
 gzip -d /usr/share/wordlists/rockyou.txt.gz
+```
 Then copy the file to your project directory.
 
 Option 2: Download Manually
