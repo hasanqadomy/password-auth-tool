@@ -44,33 +44,25 @@ Move it into your project folder (Password-Authentication-Tool/).
 🚀 How to Use the Tool
 1️⃣ Clone the Repository:
 
-sh
-Copy
-Edit
+```sh
 git clone https://github.com/hasanqadomy/password-auth-tool.git
+```
+```sh
 cd password-auth-tool
+```
 2️⃣ Make Sure rockyou.txt is Inside the Project Folder!
 (If it's missing, follow the steps above to download it.)
 
 3️⃣ Run the Script:
 
-sh
-Copy
-Edit
+```sh
 python app.py
+```
 4️⃣ Choose an Option:
-
+```sh
 1 – Check Password Strength
 2 – Generate a Secure Password
 999 – Exit
-🔐 Example Usage
-vbnet
-Copy
-Edit
-Choose an option:
-1 - Password Checker
-2 - Password Generator
-999 - Exit
 
 Enter Your Password: mypassword123
 🔍 Searching in rockyou.txt... [############          ] 60%
@@ -78,6 +70,7 @@ Enter Your Password: mypassword123
 
 🔹 Final Score: 2/5
 ⚠️ Your password is weak! Consider using uppercase letters, numbers, and special characters.
+```
 📌 Why Use This Tool?
 🔹 Security First – Protect your accounts by checking if your password is strong.
 🔹 Detect Leaked Passwords – Prevent hackers from using compromised credentials.
@@ -96,8 +89,7 @@ This project is licensed under the MIT License – Free to use, modify, and dist
 Let me know if you need any more modifications! 🚀💻
 
 yaml
-Copy
-Edit
+
 
 ---
 
@@ -109,11 +101,3 @@ Edit
 ✅ **Formatted it to be easy to follow**  
 
 ---
-
-### **✅ Next Steps**
-1. **Replace your current `README.md`** with this version.
-2. **Commit & push to GitHub**:
-   ```sh
-   git add README.md
-   git commit -m "Updated README with rockyou.txt instructions"
-   git push origin main
