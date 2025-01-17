@@ -48,7 +48,10 @@ If you're on Windows or another OS, follow these steps:
 
 ```sh
 mkdir -p Password-Authentication-Tool
+```
+```sh
 mv ~/Downloads/rockyou.txt Password-Authentication-Tool/
+```
 3️⃣ Check if the file is in the right place:
 
 ```sh
